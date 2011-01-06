@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'robotlegs'
+require 'bundler'
+Bundler.require
+
+generator = Robotlegs::ServiceGenerator.new
+generator.parse! ARGV
+generator.execute
