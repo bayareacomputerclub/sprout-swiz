@@ -1,11 +1,11 @@
-module Robotlegs
+module Swiz
   class ServiceGenerator < FlashSDK::ClassGenerator
-    include RobotlegsHelper
+    include SwizHelper
     
     def manifest
       if(!input.match(/Test$/))
         directory service_directory do
-          template "#{class_name}.as", 'RobotlegsService.as'
+          template "#{class_name}.as", 'SwizService.as'
         end
       end
 

@@ -1,11 +1,11 @@
-module Robotlegs
+module Swiz
   class MediatorGenerator < FlashSDK::ClassGenerator
-    include RobotlegsHelper
+    include SwizHelper
     
     def manifest
       if(!input.match(/Test$/))
         directory mediator_directory do
-          template "#{class_name}.as", 'RobotlegsMediator.as'
+          template "#{class_name}.as", 'SwizMediator.as'
         end
       end
 

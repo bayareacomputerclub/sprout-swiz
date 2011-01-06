@@ -8,7 +8,7 @@ class ServiceGeneratorTest < Test::Unit::TestCase
     setup do
       @temp             = File.join(fixtures, 'generators', 'tmp')
       FileUtils.mkdir_p @temp
-      @generator        = Robotlegs::ServiceGenerator.new
+      @generator        = Swiz::ServiceGenerator.new
       @generator.path   = @temp
       @generator.logger = StringIO.new
     end

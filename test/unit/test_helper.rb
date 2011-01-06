@@ -13,6 +13,6 @@ require 'mocha'
 $:.unshift File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'lib'))
 $:.unshift File.expand_path(File.join(File.dirname(__FILE__), '..'))
 
-require 'robotlegs'
+require 'swiz'
 require 'flashsdk'
 require 'sprout/test_helper'

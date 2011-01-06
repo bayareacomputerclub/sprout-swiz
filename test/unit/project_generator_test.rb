@@ -8,7 +8,7 @@ class ProjectGeneratorTest < Test::Unit::TestCase
     setup do
       @temp             = File.join(fixtures, 'generators', 'tmp')
       FileUtils.mkdir_p @temp
-      @generator        = Robotlegs::ProjectGenerator.new
+      @generator        = Swiz::ProjectGenerator.new
       @generator.path   = @temp
       @generator.logger = StringIO.new
     end

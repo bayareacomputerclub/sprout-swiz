@@ -1,6 +1,6 @@
-# Project Sprouts Robotlegs Gem _*Pre-Alpha_
+# Project Sprouts Swiz Gem _*Pre-Alpha_
 
-This RubyGem contains templates and libraries for developing [Robotlegs](http://www.robotlegs.org/) based MVCS DI applications in Actionscript 3.0 and Flex 4.0  
+This RubyGem contains templates and libraries for developing [Swiz](http://www.swiz.org/) based MVCS DI applications in Actionscript 3.0 and Flex 4.0  
 
 >**WARNING** This is opinionated software. 
 This is not and will never be infinitely configurable. Care was taken to allow customization where needed, but it is made and tested to 	work the way I think it should. Please fork and add whatever features you feel are missing.
@@ -29,14 +29,14 @@ This bundle contains generators for creating:
 ## Install
 	
 	git clone [this repo]
-	cd sprout-robotlegs
+	cd sprout-swiz
 	bundle install
-	gem build robotlegs.gemspec 
-    gem install robotlegs-1.3.0.5.pre.gem
+	gem build swiz.gemspec 
+    gem install swiz-1.3.0.5.pre.gem
     
 ####Or
     
-    gem install robotlegs --pre
+    gem install swiz --pre
     
 ## Usage
     
@@ -60,13 +60,13 @@ This bundle contains generators for creating:
 ####If you want to aid in the development of this gem:
     fork this repo
     git clone [your fork]
-	cd sprout-robotlegs
+	cd sprout-swiz
 	bundle install
 	rake test
 	do code in the interface hard
     rake test
-	gem build robotlegs.gemspec 
-    gem install robotlegs
+	gem build swiz.gemspec 
+    gem install swiz
     try it out rl-project SomeProject --package=com.foo
     send pull request
     I will merge your changes

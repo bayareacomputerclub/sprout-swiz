@@ -1,6 +1,6 @@
 package <%= package_name %>
 {	
-	import org.robotlegs.mvcs.Actor;
+	import org.swiz.mvcs.Actor;
 	
 	public class <%= class_name %> extends Actor
 	{
@@ -22,7 +22,6 @@ package <%= package_name %>
 		{
 			//Add any initialization here
 			//example: myArrayCollection = new ArrayCollection();
-			//Your content to assert here
 		}
 	}
 }

@@ -1,11 +1,11 @@
-module Robotlegs
+module Swiz
   class ContextGenerator < FlashSDK::ClassGenerator
-    include RobotlegsHelper
+    include SwizHelper
     
     def manifest
       if(!input.match(/Test$/))
         directory context_directory do
-          template "#{class_name}.as", 'RobotlegsContext.as'
+          template "#{class_name}.as", 'SwizContext.as'
         end
       end
 

@@ -2,13 +2,13 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-library :robotlegs, :swc
+library :swiz, :swc
 
 ##############################
 # Configure
 
 def configure_mxmlc t
-  t.library_path << 'lib/robotlegs/robotlegs-framework-v<%= Robotlegs::ZIP_VERSION %>.swc'
+  t.library_path << 'lib/swiz/swiz-framework-v<%= Swiz::ZIP_VERSION %>.swc'
 end
 
 ##############################

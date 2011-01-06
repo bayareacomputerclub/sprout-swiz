@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'robotlegs'
+require 'swiz'
 require 'bundler'
 Bundler.require
 
-generator = Robotlegs::MediatorGenerator.new
+generator = Swiz::MediatorGenerator.new
 generator.parse! ARGV
 generator.execute

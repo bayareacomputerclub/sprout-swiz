@@ -1,6 +1,6 @@
-module Robotlegs
+module Swiz
   
-  module RobotlegsHelper
+  module SwizHelper
     
     def fully_qualified_class_name
       package_name.dup << "." << class_name

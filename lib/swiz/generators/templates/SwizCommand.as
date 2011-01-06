@@ -1,6 +1,6 @@
 package <%= package_name %>
 {
-	import org.robotlegs.mvcs.Command;
+	import org.swiz.mvcs.Command;
 	
 	public class <%= class_name %> extends Command
 	{

@@ -9,7 +9,7 @@ class ContextGeneratorTest < Test::Unit::TestCase
     setup do
       @temp             = File.join(fixtures, 'generators', 'tmp')
       FileUtils.mkdir_p @temp
-      @generator        = Robotlegs::ContextGenerator.new
+      @generator        = Swiz::ContextGenerator.new
       @generator.path   = @temp
       @generator.logger = StringIO.new
     end

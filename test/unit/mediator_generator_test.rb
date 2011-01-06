@@ -8,7 +8,7 @@ class MediatorGeneratorTest < Test::Unit::TestCase
     setup do
       @temp             = File.join(fixtures, 'generators', 'tmp')
       FileUtils.mkdir_p @temp
-      @generator        = Robotlegs::MediatorGenerator.new
+      @generator        = Swiz::MediatorGenerator.new
       @generator.path   = @temp
       @generator.logger = StringIO.new
     end

@@ -2,8 +2,8 @@ package <%= package %>
 {
 	import flash.display.DisplayObjectContainer;
 	
-	import org.robotlegs.mvcs.Context;
-	import org.robotlegs.base.ContextEvent;
+	import org.swiz.mvcs.Context;
+	import org.swiz.base.ContextEvent;
 	
 	public class <%= class_name %>Context extends Context
 	{

@@ -7,7 +7,7 @@ require 'rake'
 require 'rake/clean'
 require 'rake/testtask'
 
-require File.join(File.dirname(__FILE__), 'lib', 'robotlegs', 'module')
+require File.join(File.dirname(__FILE__), 'lib', 'swiz', 'module')
 
 namespace :test do
 

@@ -1,4 +1,4 @@
-module Robotlegs
+module Swiz
   class ProjectGenerator < FlashSDK::ProjectGenerator
     
     ## These params below are inherited from the AS3 ProjectGenerator and are available
@@ -26,18 +26,18 @@ module Robotlegs
     def manifest
       directory project_name do
 
-        template "rakefile.rb", "RobotlegsRakefile.rb"
-        template "Gemfile", "RobotlegsGemfile.rb"
+        template "rakefile.rb", "SwizRakefile.rb"
+        template "Gemfile", "SwizGemfile.rb"
         
         directory lib
         directory bin
 
         directory src do
-          template "#{project_name}.mxml", "RobotlegsMain.mxml"
+          template "#{project_name}.mxml", "SwizMain.mxml"
           template "#{test_runner_name}.mxml", "Flex4TestRunner.mxml"
 
           directory package_directory do
-          template "#{project_name}Context.as", "RobotlegsContext.as"            
+          template "#{project_name}Context.as", "SwizContext.as"            
             directory model do
               directory proxy
               directory vo unless shallow

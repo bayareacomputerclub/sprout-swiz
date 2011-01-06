@@ -1,11 +1,11 @@
-module Robotlegs
+module Swiz
   class ProxyGenerator < FlashSDK::ClassGenerator
-    include RobotlegsHelper
+    include SwizHelper
     
     def manifest
       if(!input.match(/Test$/))
         directory proxy_directory do
-          template "#{class_name}.as", 'RobotlegsProxy.as'
+          template "#{class_name}.as", 'SwizProxy.as'
         end
       end
 
